@@ -5,4 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :produits
+
+  # for activeadmin
+  def name
+    "#{email}"
+  end
 end
