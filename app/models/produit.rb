@@ -1,5 +1,6 @@
 class Produit < ApplicationRecord
   belongs_to :user
+  belongs_to :marque
 
   validates :titre, presence: true, uniqueness: true
   validates :prix, presence: true, numericality: { only_integer: true }
