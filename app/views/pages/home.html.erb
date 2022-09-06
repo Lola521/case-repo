@@ -1,2 +1,7 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+Welcome back to your shop
+<h1><%= current_user.nom_boutique  %></h1>
+
+<%= link_to "add a new product", new_produit_path %>
+<br>
+<%= link_to "see all my products", produits_path %>
+

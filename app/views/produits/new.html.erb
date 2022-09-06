@@ -1,0 +1,8 @@
+ <%= simple_form_for [ @produit ] do |f| %>
+    <%= f.input :titre %>
+    <%= f.input :prix, as: :integer %>
+    <%= f.input :stock, as: :integer%>
+    <%= f.input :marque_id, collection: Produit::MARQUE, prompt: :translate %>
+    <%= f.submit "publish", class: "btn btn-flat" %>
+  <% end %>
+  <a class="btn btn-flat" <%= link_to "Back to my shop", root_path /a>

@@ -1,0 +1,10 @@
+<ul>
+  <% @produits.each do |p| %>
+    <li><%= p.titre %>
+    <% if p.marque_id.present? %>
+      published
+    <% else %>
+      disable  </li>
+    <% end %>
+  <% end %>
+</ul>
