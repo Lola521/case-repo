@@ -4,10 +4,9 @@ ActiveAdmin.register User do
     selectable_column
     column :id
     column :email
-    column :name
+    column :nom_boutique
     column :created_at
     column :admin
-    column :nom_boutique
     actions
   end
 
