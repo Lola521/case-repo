@@ -18,7 +18,14 @@ givenchy = Marque.create!(nom_marque: 'givenchy')
 hermes= Marque.create!(nom_marque: 'hermes')
 
 puts 'seeds produit'
-Produit.create!(titre: 'joli robe', prix: '20', stock: '2', marque: dior, user: jude )
+Produit.create!(titre: 'joli robe 1', prix: '20', stock: '2', marque: dior, user: jude )
+Produit.create!(titre: 'joli robe 2', prix: '20', stock: '2', marque: givenchy, user: jude )
+Produit.create!(titre: 'joli robe 3', prix: '20', stock: '2', marque: fila, user: jude )
+Produit.create!(titre: 'joli robe 4', prix: '20', stock: '2', marque: dior, user: jude )
 Produit.create!(titre: 'joli joli', prix: '10', stock: '1', marque: hermes, user: admin )
+Produit.create!(titre: 'joli joli 1', prix: '10', stock: '1', marque: hermes, user: admin )
+Produit.create!(titre: 'joli joli 2', prix: '10', stock: '1', marque: ellesse, user: admin )
+Produit.create!(titre: 'joli joli 3', prix: '10', stock: '1', marque: hermes, user: admin )
+Produit.create!(titre: 'joli joli 4', prix: '10', stock: '1', marque: hermes, user: admin )
 
 puts 'done'

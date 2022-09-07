@@ -2,9 +2,9 @@
   <% @produits.each do |p| %>
     <li><%= p.titre %>
     <% if p.marque_id.present? %>
-      published
+      <p style="color:#6FEDD6"> published </p>
     <% else %>
-      disable  </li>
+      <p style="color:#FF4A4A"> disable  </p></li>
     <% end %>
   <% end %>
 </ul>
