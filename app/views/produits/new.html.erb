@@ -2,6 +2,6 @@
     <%= f.input :titre %>
     <%= f.input :prix, as: :integer %>
     <%= f.input :stock, as: :integer%>
-    <%= f.input :marque, collection: Produit::MARQUE, prompt: :translate %>
+    <%= f.input :marque_id, collection: Produit::MARQUE, prompt: :translate %>
     <%= f.submit "publish", class: "btn btn-flat" %>
   <% end %>
