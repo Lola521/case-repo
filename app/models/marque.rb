@@ -5,7 +5,7 @@ class Marque < ApplicationRecord
   validates :nom_marque, presence: true, uniqueness: true
 
   def name
-    "#{nom_marque}"
+    nom_marque
   end
 
 end

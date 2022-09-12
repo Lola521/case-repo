@@ -8,6 +8,6 @@ class User < ApplicationRecord
 
   # for activeadmin
   def name
-    "#{email}"
+    email
   end
 end
